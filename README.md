@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+Harmony Staking SDK - React App example
+-----------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an example React application that demonstrates how to use the `harmony-staking-sdk` library to interact with Harmony blockchain's staking contracts. It includes two components, `StakingBlock` and `ValidatorInfo`, that allow users to delegate, undelegate, and claim rewards for a specific validator address.
 
-## Available Scripts
+`StakingBlock` component has a form that allows the user to input the amount of ONE tokens they want to delegate to a validator, and three buttons to delegate, undelegate, and claim rewards. When the user clicks any of the buttons, the corresponding function is executed and sends a transaction to the Harmony blockchain.
 
-In the project directory, you can run:
+`ValidatorInfo` component displays information about a specific validator, including the validator's name, address, total stake, self-stake, total number of delegators, and website.
 
-### `npm start`
+Dependencies
+------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This React application requires the following dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*   `React`: a JavaScript library for building user interfaces
+*   `react-bootstrap`: a UI library for React that provides pre-built components
+*   `web3`: a JavaScript library for interacting with Ethereum-compatible blockchains
+*   `harmony-staking-sdk`: a Harmony blockchain library that provides an API for interacting with staking contracts.
 
-### `npm test`
+Installation and Usage
+----------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install and use this React application:
 
-### `npm run build`
+1.  Clone the repository using `git clone https://github.com/{repository-name}.git`.
+2.  In the root directory, run `npm install` to install the required dependencies.
+3.  Run `npm start` to start the application in development mode.
+4.  Open `http://localhost:3000` to view the application in the browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can interact with the `StakingBlock` component by inputting the amount of ONE tokens you want to delegate, and then clicking on any of the three buttons: `Delegate`, `UnDelegate`, or `Claim Rewards`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can also view the `ValidatorInfo` component by passing a validator address as a prop to the component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Notes
+-----
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+*   This is an example application that demonstrates how to use the `harmony-staking-sdk` library with React. You should modify the code to fit your specific use case.
+*   You will need to have Metamask or a similar web3 wallet installed in your browser to use this application.

@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ValidatorInfo from './ValidatorInfo';
+import StakingBlock from './StakingBlock';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="column justify-content-center align-items-center">
+        <ValidatorInfo validatorAddress="one1w7nvheulzwprf9d9a3r8sqtv5q47qlqx7kured" />
+        <StakingBlock validatorAddress="one1w7nvheulzwprf9d9a3r8sqtv5q47qlqx7kured" />
+      </div>
     </div>
   );
 }
